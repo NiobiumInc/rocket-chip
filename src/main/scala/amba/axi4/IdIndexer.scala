@@ -12,8 +12,13 @@ import org.chipsalliance.diplomacy.lazymodule.{LazyModule, LazyModuleImp}
 import freechips.rocketchip.diplomacy.IdRange
 import freechips.rocketchip.util.{ControlKey, SimpleBundleField}
 
-case object AXI4ExtraId extends ControlKey[UInt]("extra_id")
-case class AXI4ExtraIdField(width: Int) extends SimpleBundleField(AXI4ExtraId)(Output(UInt(width.W)), 0.U)
+// Keyed per AXI4IdIndexer instance (via `uid`) rather than a single shared object: two indexer instances can
+// legitimately appear in series on the same path (e.g. one bounding a crossbar's per-ID tracker close to its
+// source, another compacting a merged ID space further downstream), and each must echo its own extra-ID bits
+// independently. A shared key would make the second instance's BundleMap collide with the first's (duplicate
+// field name) whenever both indexers' fields survive onto the same edge.
+case class AXI4ExtraId(uid: Int) extends ControlKey[UInt](s"extra_id_$uid")
+case class AXI4ExtraIdField(uid: Int, width: Int) extends SimpleBundleField(AXI4ExtraId(uid))(Output(UInt(width.W)), 0.U)
 
 /** This adapter limits the set of FIFO domain ids used by outbound transactions.
   *
@@ -26,6 +31,10 @@ case class AXI4ExtraIdField(width: Int) extends SimpleBundleField(AXI4ExtraId)(O
 class AXI4IdIndexer(idBits: Int)(implicit p: Parameters) extends LazyModule
 {
   require (idBits >= 0, s"AXI4IdIndexer: idBits must be > 0, not $idBits")
+
+  // Unique per instance so this indexer's echo field never collides with another AXI4IdIndexer's field on a
+  // shared downstream edge (see AXI4ExtraId above).
+  private val uid = AXI4IdIndexer.nextUid()
 
   val node = AXI4AdapterNode(
     masterFn = { mp =>
@@ -51,7 +60,7 @@ class AXI4IdIndexer(idBits: Int)(implicit p: Parameters) extends LazyModule
       }
       val finalNameStrings = names.map { n => if (n.isEmpty) "(unused)" else n.toList.mkString(", ") }
       val bits = log2Ceil(mp.endId) - idBits
-      val field = if (bits > 0) Seq(AXI4ExtraIdField(bits)) else Nil
+      val field = if (bits > 0) Seq(AXI4ExtraIdField(uid, bits)) else Nil
       mp.copy(
         echoFields = field ++ mp.echoFields,
         masters    = masters.zip(finalNameStrings).map { case (m, n) => m.copy(name = n) }.toIndexedSeq)
@@ -84,17 +93,17 @@ class AXI4IdIndexer(idBits: Int)(implicit p: Parameters) extends LazyModule
       val bits = log2Ceil(edgeIn.master.endId) - idBits
       if (bits > 0) {
         // (in.aX.bits.id >> idBits).width = bits > 0
-        out.ar.bits.echo(AXI4ExtraId) := in.ar.bits.id >> idBits
-        out.aw.bits.echo(AXI4ExtraId) := in.aw.bits.id >> idBits
+        out.ar.bits.echo(AXI4ExtraId(uid)) := in.ar.bits.id >> idBits
+        out.aw.bits.echo(AXI4ExtraId(uid)) := in.aw.bits.id >> idBits
         // Special care is needed in case of 0 idBits, b/c .id has width 1 still
         if (idBits == 0) {
           out.ar.bits.id := 0.U
           out.aw.bits.id := 0.U
-          in.r.bits.id := out.r.bits.echo(AXI4ExtraId)
-          in.b.bits.id := out.b.bits.echo(AXI4ExtraId)
+          in.r.bits.id := out.r.bits.echo(AXI4ExtraId(uid))
+          in.b.bits.id := out.b.bits.echo(AXI4ExtraId(uid))
         } else {
-          in.r.bits.id := Cat(out.r.bits.echo(AXI4ExtraId), out.r.bits.id)
-          in.b.bits.id := Cat(out.b.bits.echo(AXI4ExtraId), out.b.bits.id)
+          in.r.bits.id := Cat(out.r.bits.echo(AXI4ExtraId(uid)), out.r.bits.id)
+          in.b.bits.id := Cat(out.b.bits.echo(AXI4ExtraId(uid)), out.b.bits.id)
         }
       }
     }
@@ -103,6 +112,9 @@ class AXI4IdIndexer(idBits: Int)(implicit p: Parameters) extends LazyModule
 
 object AXI4IdIndexer
 {
+  private var uidCounter = 0
+  private[axi4] def nextUid(): Int = { val u = uidCounter; uidCounter += 1; u }
+
   def apply(idBits: Int)(implicit p: Parameters): AXI4Node =
   {
     val axi4index = LazyModule(new AXI4IdIndexer(idBits))
