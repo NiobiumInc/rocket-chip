@@ -1,0 +1,424 @@
+THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
+============================================================
+
+Project: rocket-chip
+Generated: 2026-09-04
+Tool: SCANOSS (snippet detection with License dataset)
+Components: 30
+
+This file lists all third-party software components detected
+in this repository, along with their licenses and copyright
+notices as required by those licenses.
+
+------------------------------------------------------------
+
+WARNING: The following component(s) have no license information.
+These require manual review to determine licensing terms.
+
+  - fa18-wellness-monitor (https://github.com/ucb-ee290c/fa18-wellness-monitor)
+  - hdfi (https://github.com/sslab-gatech/hdfi)
+  - reverse-engineering-rocket-chip (https://github.com/uzair540/reverse-engineering-rocket-chip)
+
+------------------------------------------------------------
+
+LICENSE SUMMARY
+
+  Apache-2.0: 21 component(s)
+  BSD-2-Clause: 5 component(s)
+  BSD-3-Clause: 6 component(s)
+  CC-BY-4.0: 1 component(s)
+  MIT: 1 component(s)
+
+------------------------------------------------------------
+
+COMPONENT ATTRIBUTIONS
+
+  authz-verify-proxy
+  Version: v0.1.5
+  Source: https://github.com/SoMind/authz-verify-proxy
+  PURL: pkg:github/somind/authz-verify-proxy
+  Copyright:
+    Copyright 2020 Ed Sweeney
+  License: MIT
+
+  berkeley-hardfloat
+  Version: b3c8a38
+  Source: https://github.com/ucb-bar/berkeley-hardfloat
+  PURL: pkg:github/ucb-bar/berkeley-hardfloat
+  Copyright:
+    Copyright 2010-2015 The Regents of the University of California
+    Copyright 2010; 2011; 2012; 2013; 2014; 2015; 2016 The Regents of the
+    Copyright 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017 The Regents of the
+    Copyright 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018 The Regents of
+    Copyright 2017 SiFive; Inc.  All rights reserved.
+    Copyright 2019; 2020 The Regents of the University of California.  All rights
+  License: BSD-2-Clause
+
+  berkeley-softfloat-3
+  Version: b64af41c
+  Source: https://github.com/ucb-bar/berkeley-softfloat-3
+  PURL: pkg:github/ucb-bar/berkeley-softfloat-3
+  Copyright:
+    Copyright 2011; 2012; 2013; 2014 The Regents of the University of California.
+    Copyright 2011; 2012; 2013; 2014; 2015 The Regents of the University of
+    Copyright 2011; 2012; 2013; 2014; 2015; 2016 The Regents of the University of
+    Copyright 2011; 2012; 2013; 2014; 2015; 2016; 2017 The Regents of the
+    Copyright 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018 The Regents of the
+    Copyright 2011; 2012; 2013; 2014; 2015; 2016; 2018 The Regents of the
+    Copyright 2011; 2012; 2013; 2014; 2015; 2017 The Regents of the University of
+    Copyright 2011; 2012; 2013; 2014; 2015; 2018 The Regents of the University of
+    Copyright 2011; 2012; 2013; 2014; 2017 The Regents of the University of
+    Copyright 2011; 2012; 2013; 2014; 2018 The Regents of the University of
+    Copyright 2017 The Regents of the University of California.  All rights
+  License: BSD-2-Clause
+
+  berkeley-testfloat-3
+  Version: 06b2007
+  Source: https://github.com/ucb-bar/berkeley-testfloat-3
+  PURL: pkg:github/ucb-bar/berkeley-testfloat-3
+  Copyright:
+    Copyright 2011; 2012; 2013; 2014 The Regents of the University of California.
+    Copyright 2011; 2012; 2013; 2014; 2015 The Regents of the University of
+    Copyright 2011; 2012; 2013; 2014; 2015; 2016 The Regents of the University of
+    Copyright 2011; 2012; 2013; 2014; 2015; 2016; 2017 The Regents of the
+    Copyright 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018 The Regents of the
+    Copyright 2011; 2012; 2013; 2014; 2015; 2017 The Regents of the University of
+    Copyright 2011; 2012; 2013; 2014; 2017 The Regents of the University of
+    Copyright 2011; 2012; 2013; 2014; 2017; 2018 The Regents of the University of
+    Copyright 2011; 2012; 2013; 2014; 2018 The Regents of the University of
+  License: BSD-2-Clause
+
+  cde
+  Version: 52768c9
+  Source: https://github.com/chipsalliance/cde
+  PURL: pkg:github/chipsalliance/cde
+  Copyright:
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0
+
+  chisel
+  Version: v6.0.0-RC1
+  Source: https://github.com/chipsalliance/chisel
+  PURL: pkg:github/chipsalliance/chisel
+  Copyright:
+    Copyright 2014 - 2019 The Regents of the University of
+    Copyright (c) 2014 - 2016 The Regents of the University of
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0
+
+  chisel-circt
+  Version: v0.1.0
+  Source: https://github.com/sifive/chisel-circt
+  PURL: pkg:github/sifive/chisel-circt
+  Copyright:
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0
+
+  chisel-plugin_2.13.6
+  Version: 6.0.0-RC1
+  Source: https://mvnrepository.com/artifact/org.chipsalliance/chisel-plugin_2.13.6
+  PURL: pkg:maven/org.chipsalliance/chisel-plugin_2.13.6
+  Copyright:
+    Copyright 2014 - 2019 The Regents of the University of
+    Copyright (c) 2014 - 2016 The Regents of the University of
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0
+
+  chisel3
+  Version: v6.0.0-M3
+  Source: https://github.com/chipsalliance/chisel3
+  PURL: pkg:github/chipsalliance/chisel3
+  Copyright:
+    Copyright 2014 - 2019 The Regents of the University of
+    Copyright (c) 2014 - 2016 The Regents of the University of
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0
+
+  chisel_2.13
+  Version: 6.0.0-RC1
+  Source: https://mvnrepository.com/artifact/org.chipsalliance/chisel_2.13
+  PURL: pkg:maven/org.chipsalliance/chisel_2.13
+  Copyright:
+    Copyright 2014 - 2019 The Regents of the University of
+    Copyright (c) 2014 - 2016 The Regents of the University of
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0
+
+  cva6
+  Version: bsc-3-10-18
+  Source: https://github.com/openhwgroup/cva6
+  PURL: pkg:github/openhwgroup/cva6
+  Copyright:
+    Copyright 2012-2015 ; The Regents of the University of California (Regents).
+    Copyright 2016-2017 SiFive Inc
+    Copyright 2017-2020 ; The Regents of the University of California (Regents)
+    Copyright 2019 ; InCore Semiconductors Pvt. Ltd.
+    Copyright (c) 2010-2017; The Regents of the University of California
+    Copyright (c) 2013 Thomas Park
+    Copyright (c) 2017 Can G  ney Aksakalli
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0, BSD-3-Clause
+
+  diplomacy
+  Version: 6590276
+  Source: https://github.com/chipsalliance/diplomacy
+  PURL: pkg:github/chipsalliance/diplomacy
+  Copyright:
+    Copyright 2016-2017 SiFive Inc
+  License: Apache-2.0
+
+  fa18-wellness-monitor
+  Version: origLab2
+  Source: https://github.com/ucb-ee290c/fa18-wellness-monitor
+  PURL: pkg:github/ucb-ee290c/fa18-wellness-monitor
+  License: UNKNOWN — requires manual review
+
+  firrtl
+  Version: v1.5.0-RC1
+  Source: https://github.com/chipsalliance/firrtl
+  PURL: pkg:github/chipsalliance/firrtl
+  Copyright:
+    Copyright (c) 2014 - 2016 The Regents of the University of
+  License: Apache-2.0
+
+  github.com/chipsalliance/chisel
+  Version: v6.0.0+incompatible
+  Source: https://proxy.golang.org/github.com/chipsalliance/chisel/@v/v6.0.0+incompatible.zip
+  PURL: pkg:golang/github.com/chipsalliance/chisel
+  License: Apache-2.0, BSD-3-Clause
+
+  hdfi
+  Version: b917c9e
+  Source: https://github.com/sslab-gatech/hdfi
+  PURL: pkg:github/sslab-gatech/hdfi
+  License: UNKNOWN — requires manual review
+
+  labeled-RISC-V
+  Version: 4b3bc70
+  Source: https://github.com/LvNA-system/labeled-RISC-V
+  PURL: pkg:github/lvna-system/labeled-risc-v
+  Copyright:
+    Copyright (c) 2012-2014; The Regents of the University of California
+    Copyright (c) 2012-2014; The Regents of the University of California (Regents)
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0, BSD-2-Clause, BSD-3-Clause
+
+  lowrisc-chip
+  Version: v0.6-rc1
+  Source: https://github.com/lowRISC/lowrisc-chip
+  PURL: pkg:github/lowrisc/lowrisc-chip
+  Copyright:
+    Copyright (c) 2016 The Regents of the University of
+    Copyright (c) 2016 The Regents of the University of California (Regents)
+  License: Apache-2.0, BSD-2-Clause, BSD-3-Clause
+
+  mycpu
+  Version: scoreboard
+  Source: https://github.com/cyril0124/mycpu
+  PURL: pkg:github/cyril0124/mycpu
+  Copyright:
+    Copyright 2016-2019 SiFive; Inc.
+  License: Apache-2.0
+
+  pythondata-cpu-rocket
+  Version: 0.0.post7058
+  Source: https://pypi.org/project/pythondata-cpu-rocket
+  PURL: pkg:pypi/pythondata-cpu-rocket
+  Copyright:
+    Copyright copyright owner or entity authorized by the copyright
+  License: Apache-2.0
+
+  pythondata-cpu-rocket
+  Version: 2020.08
+  Source: https://github.com/litex-hub/pythondata-cpu-rocket
+  PURL: pkg:github/litex-hub/pythondata-cpu-rocket
+  Copyright:
+    Copyright copyright owner or entity authorized by the copyright
+  License: Apache-2.0
+
+  reverse-engineering-rocket-chip
+  Version: cd53374
+  Source: https://github.com/uzair540/reverse-engineering-rocket-chip
+  PURL: pkg:github/uzair540/reverse-engineering-rocket-chip
+  License: UNKNOWN — requires manual review
+
+  riscof
+  Version: 1.22.0
+  Source: https://github.com/riscv-software-src/riscof
+  PURL: pkg:github/riscv-software-src/riscof
+  Copyright:
+    Copyright 2019 IIT Madras
+    Copyright (c) 2019; incoresemi
+  License: BSD-3-Clause
+
+  riscv-arch-test
+  Version: 2.0
+  Source: https://github.com/riscv-non-isa/riscv-arch-test
+  PURL: pkg:github/riscv-non-isa/riscv-arch-test
+  Copyright:
+    Copyright 2012-2015 ; The Regents of the University of California (Regents).
+    Copyright 2020 ; InCore Semiconductors Pvt. Ltd.
+  License: Apache-2.0, CC-BY-4.0
+
+  riscv-boom
+  Version: v2.1.0
+  Source: https://github.com/riscv-boom/riscv-boom
+  PURL: pkg:github/riscv-boom/riscv-boom
+  Copyright:
+    Copyright copyright owner or entity authorized by
+  License: BSD-3-Clause
+
+  rocket-chip
+  Version: 7990d8b
+  Source: https://github.com/freechipsproject/rocket-chip
+  PURL: pkg:github/chipsalliance/rocket-chip
+  Copyright:
+    Copyright 2012-2014 The Regents of the University of California
+    Copyright 2016-2017 SiFive Inc
+  License: Apache-2.0
+
+  t1
+  Version: 5df9ae2
+  Source: https://github.com/chipsalliance/t1
+  PURL: pkg:github/chipsalliance/t1
+  Copyright:
+    Copyright 2010-2015 ; The Regents of the University of California
+    Copyright 2012-2015 ; The Regents of the University of California (Regents).
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0
+
+  vector
+  Version: 8fe613d
+  Source: https://github.com/sequencer/vector
+  PURL: pkg:github/sequencer/vector
+  Copyright:
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0
+
+  vyond
+  Version: c4c2d0a
+  Source: https://github.com/samsung/vyond
+  PURL: pkg:github/samsung/vyond
+  Copyright:
+    Copyright 2010 The Regents of the
+    Copyright 2024 Samsung Electronics Co.  Ltd.   Contributors All Rights Reserved
+  License: Apache-2.0
+
+  www.chisel-lang.org
+  Version: 3.2.2
+  Source: https://github.com/freechipsproject/www.chisel-lang.org
+  PURL: pkg:github/freechipsproject/www.chisel-lang.org
+  Copyright:
+    Copyright copyright owner or entity authorized by
+  License: Apache-2.0
+
+------------------------------------------------------------
+
+FULL LICENSE TEXTS
+
+--- MIT ---
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+--- BSD-2-Clause ---
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+--- Apache-2.0 ---
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+--- BSD-3-Clause ---
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+--- CC-BY-4.0 ---
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative
+Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+You are free to:
+- Share: copy and redistribute the material in any medium or format
+- Adapt: remix, transform, and build upon the material for any purpose,
+  even commercially
+
+Under the following terms:
+- Attribution: You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
