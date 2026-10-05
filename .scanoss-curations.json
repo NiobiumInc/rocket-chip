@@ -1,0 +1,52 @@
+{
+  "curations": {
+    "berkeley-hardfloat": {
+      "license": "UNKNOWN",
+      "reviewed": null,
+      "reviewer": null,
+      "note": "No license found at github.com/ucb-bar/berkeley-hardfloat"
+    },
+    "berkeley-softfloat-3": {
+      "license": "BSD-3-Clause",
+      "reviewed": "2026-09-04",
+      "reviewer": "auto-known-projects",
+      "note": "Well-known project: Berkeley SoftFloat"
+    },
+    "berkeley-testfloat-3": {
+      "license": "UNKNOWN",
+      "reviewed": null,
+      "reviewer": null,
+      "note": "No license found at github.com/ucb-bar/berkeley-testfloat-3"
+    },
+    "fa18-wellness-monitor": {
+      "license": "UNKNOWN",
+      "reviewed": null,
+      "reviewer": null,
+      "note": "No license found at github.com/ucb-ee290c/fa18-wellness-monitor"
+    },
+    "hdfi": {
+      "license": "UNKNOWN",
+      "reviewed": null,
+      "reviewer": null,
+      "note": "No license found at github.com/sslab-gatech/hdfi"
+    },
+    "labeled-RISC-V": {
+      "license": "UNKNOWN",
+      "reviewed": null,
+      "reviewer": null,
+      "note": "No license found at github.com/LvNA-system/labeled-RISC-V"
+    },
+    "lowrisc-chip": {
+      "license": "UNKNOWN",
+      "reviewed": null,
+      "reviewer": null,
+      "note": "No license found at github.com/lowRISC/lowrisc-chip"
+    },
+    "reverse-engineering-rocket-chip": {
+      "license": "UNKNOWN",
+      "reviewed": null,
+      "reviewer": null,
+      "note": "No license found at github.com/uzair540/reverse-engineering-rocket-chip"
+    }
+  }
+}
