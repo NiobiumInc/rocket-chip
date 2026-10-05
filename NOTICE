@@ -2,9 +2,9 @@ THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
 ============================================================
 
 Project: rocket-chip
-Generated: 2026-09-04
+Generated: 2026-10-05
 Tool: SCANOSS (snippet detection with License dataset)
-Components: 30
+Components: 31
 
 This file lists all third-party software components detected
 in this repository, along with their licenses and copyright
@@ -12,22 +12,14 @@ notices as required by those licenses.
 
 ------------------------------------------------------------
 
-WARNING: The following component(s) have no license information.
-These require manual review to determine licensing terms.
-
-  - fa18-wellness-monitor (https://github.com/ucb-ee290c/fa18-wellness-monitor)
-  - hdfi (https://github.com/sslab-gatech/hdfi)
-  - reverse-engineering-rocket-chip (https://github.com/uzair540/reverse-engineering-rocket-chip)
-
-------------------------------------------------------------
-
 LICENSE SUMMARY
 
   Apache-2.0: 21 component(s)
   BSD-2-Clause: 5 component(s)
-  BSD-3-Clause: 6 component(s)
+  BSD-3-Clause: 7 component(s)
   CC-BY-4.0: 1 component(s)
-  MIT: 1 component(s)
+  MIT: 2 component(s)
+  UNKNOWN: 7 component(s)
 
 ------------------------------------------------------------
 
@@ -52,7 +44,7 @@ COMPONENT ATTRIBUTIONS
     Copyright 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018 The Regents of
     Copyright 2017 SiFive; Inc.  All rights reserved.
     Copyright 2019; 2020 The Regents of the University of California.  All rights
-  License: BSD-2-Clause
+  License: BSD-2-Clause, UNKNOWN
 
   berkeley-softfloat-3
   Version: b64af41c
@@ -70,7 +62,7 @@ COMPONENT ATTRIBUTIONS
     Copyright 2011; 2012; 2013; 2014; 2017 The Regents of the University of
     Copyright 2011; 2012; 2013; 2014; 2018 The Regents of the University of
     Copyright 2017 The Regents of the University of California.  All rights
-  License: BSD-2-Clause
+  License: BSD-2-Clause, BSD-3-Clause
 
   berkeley-testfloat-3
   Version: 06b2007
@@ -86,7 +78,7 @@ COMPONENT ATTRIBUTIONS
     Copyright 2011; 2012; 2013; 2014; 2017 The Regents of the University of
     Copyright 2011; 2012; 2013; 2014; 2017; 2018 The Regents of the University of
     Copyright 2011; 2012; 2013; 2014; 2018 The Regents of the University of
-  License: BSD-2-Clause
+  License: BSD-2-Clause, UNKNOWN
 
   cde
   Version: 52768c9
@@ -102,7 +94,8 @@ COMPONENT ATTRIBUTIONS
   PURL: pkg:github/chipsalliance/chisel
   Copyright:
     Copyright 2014 - 2019 The Regents of the University of
-    Copyright (c) 2014 - 2016 The Regents of the University of
+    Copyright 2014-2016 The Regents of the University of
+    Copyright 2026 Li Haoyi
     Copyright copyright owner or entity authorized by
   License: Apache-2.0
 
@@ -140,7 +133,8 @@ COMPONENT ATTRIBUTIONS
   PURL: pkg:maven/org.chipsalliance/chisel_2.13
   Copyright:
     Copyright 2014 - 2019 The Regents of the University of
-    Copyright (c) 2014 - 2016 The Regents of the University of
+    Copyright 2014-2016 The Regents of the University of
+    Copyright 2026 Li Haoyi
     Copyright copyright owner or entity authorized by
   License: Apache-2.0
 
@@ -149,10 +143,16 @@ COMPONENT ATTRIBUTIONS
   Source: https://github.com/openhwgroup/cva6
   PURL: pkg:github/openhwgroup/cva6
   Copyright:
+    Copyright 1300 NE Henley Ct. Suite 3
     Copyright 2012-2015 ; The Regents of the University of California (Regents).
     Copyright 2016-2017 SiFive Inc
     Copyright 2017-2020 ; The Regents of the University of California (Regents)
     Copyright 2019 ; InCore Semiconductors Pvt. Ltd.
+    Copyright 2022 Digilent Inc
+    Copyright 2023 Thales Silicon Security
+    Copyright 2024 Thales DIS France SAS
+    Copyright 2025 Thales DIS design services SAS
+    Copyright 2026 Univ. Grenoble Alpes Inria  TIMA Laboratory
     Copyright (c) 2010-2017; The Regents of the University of California
     Copyright (c) 2013 Thomas Park
     Copyright (c) 2017 Can G  ney Aksakalli
@@ -171,7 +171,7 @@ COMPONENT ATTRIBUTIONS
   Version: origLab2
   Source: https://github.com/ucb-ee290c/fa18-wellness-monitor
   PURL: pkg:github/ucb-ee290c/fa18-wellness-monitor
-  License: UNKNOWN — requires manual review
+  License: UNKNOWN
 
   firrtl
   Version: v1.5.0-RC1
@@ -191,7 +191,7 @@ COMPONENT ATTRIBUTIONS
   Version: b917c9e
   Source: https://github.com/sslab-gatech/hdfi
   PURL: pkg:github/sslab-gatech/hdfi
-  License: UNKNOWN — requires manual review
+  License: UNKNOWN
 
   labeled-RISC-V
   Version: 4b3bc70
@@ -201,7 +201,7 @@ COMPONENT ATTRIBUTIONS
     Copyright (c) 2012-2014; The Regents of the University of California
     Copyright (c) 2012-2014; The Regents of the University of California (Regents)
     Copyright copyright owner or entity authorized by
-  License: Apache-2.0, BSD-2-Clause, BSD-3-Clause
+  License: Apache-2.0, BSD-2-Clause, BSD-3-Clause, UNKNOWN
 
   lowrisc-chip
   Version: v0.6-rc1
@@ -210,7 +210,7 @@ COMPONENT ATTRIBUTIONS
   Copyright:
     Copyright (c) 2016 The Regents of the University of
     Copyright (c) 2016 The Regents of the University of California (Regents)
-  License: Apache-2.0, BSD-2-Clause, BSD-3-Clause
+  License: Apache-2.0, BSD-2-Clause, BSD-3-Clause, UNKNOWN
 
   mycpu
   Version: scoreboard
@@ -236,11 +236,19 @@ COMPONENT ATTRIBUTIONS
     Copyright copyright owner or entity authorized by the copyright
   License: Apache-2.0
 
+  redo-log-parser
+  Version: v0.1.0
+  Source: https://github.com/fyndalf/redo-log-parser
+  PURL: pkg:github/fyndalf/redo-log-parser
+  Copyright:
+    Copyright 2020 Finn K
+  License: MIT
+
   reverse-engineering-rocket-chip
   Version: cd53374
   Source: https://github.com/uzair540/reverse-engineering-rocket-chip
   PURL: pkg:github/uzair540/reverse-engineering-rocket-chip
-  License: UNKNOWN — requires manual review
+  License: UNKNOWN
 
   riscof
   Version: 1.22.0
@@ -258,6 +266,9 @@ COMPONENT ATTRIBUTIONS
   Copyright:
     Copyright 2012-2015 ; The Regents of the University of California (Regents).
     Copyright 2020 ; InCore Semiconductors Pvt. Ltd.
+    Copyright 2026 Eclipse Foundation
+    Copyright 2026 Harvey Mudd College Eclipse Foundation and Marin Radic
+    Copyright 2026 Tenstorrent Corporation
   License: Apache-2.0, CC-BY-4.0
 
   riscv-boom
@@ -274,6 +285,7 @@ COMPONENT ATTRIBUTIONS
   PURL: pkg:github/chipsalliance/rocket-chip
   Copyright:
     Copyright 2012-2014 The Regents of the University of California
+    Copyright 2016 The Regents of the University of
     Copyright 2016-2017 SiFive Inc
   License: Apache-2.0
 
@@ -292,6 +304,11 @@ COMPONENT ATTRIBUTIONS
   Source: https://github.com/sequencer/vector
   PURL: pkg:github/sequencer/vector
   Copyright:
+    Copyright 1995-2024 Arm Limited  or its affiliates
+    Copyright 2010-2015 The Regents of the University of California
+    Copyright 2012-2015 The Regents of the University of California  Regents
+    Copyright 2022 RISC-V International
+    Copyright 2024 Jiuyang Liu  liu@jiuyang.me
     Copyright copyright owner or entity authorized by
   License: Apache-2.0
 
@@ -300,12 +317,88 @@ COMPONENT ATTRIBUTIONS
   Source: https://github.com/samsung/vyond
   PURL: pkg:github/samsung/vyond
   Copyright:
+    Copyright 1006   00:00:04 nm-applet
+    Copyright 1286 173 429 714 .0 ----- C -----  3 files
+    Copyright 1610 166 411 .5 ----- Benchmark -----  6 files
+    Copyright 1737   00:00:00 dhclient
+    Copyright 1804   00:00:00 sshd
+    Copyright 1809 pts 3 00:00:00 sh
+    Copyright 1818 pts 3 00:00:00 ps
+    Copyright 1989 Free Software Foundation Inc
+    Copyright 1993 United States Government as represented by the
+    Copyright 1995-1996 by Mylex Corporation
+    Copyright 1995-1996 by Mylex Corporation. All Rights Reserved
+    Copyright 1996 University of Cambridge Computer Laboratory
+    Copyright 1996-2006 Julian R Seward. All
+    Copyright 1996-2006 Julian Seward  jseward@bzip.org
+    Copyright 1999-2005 by Erik Andersen The Buildroot
+    Copyright 2000 Free Software Foundation Inc. 51 Franklin St
+    Copyright 2001 Matt Kraai
+    Copyright 2001-2007 Red Hat Inc. and others
+    Copyright 2003-2006 Marvell International Ltd
+    Copyright 2007 Free Software Foundation Inc.  http:  fsf.org
+    Copyright 2008 Christopher Batten
+    Copyright 2009 EEMBC All rights reserved
+    Copyright 2009 Embecosm Limited
+    Copyright 2009 by Tom Zanussi  tzanussi@gmail.com
+    Copyright 2009-2012 Xilinx Inc. All rights reserved
+    Copyright 2010 Nov
     Copyright 2010 The Regents of the
+    Copyright 2010-2011 The University of Texas at Austin
+    Copyright 2010-2015 The Regents of the University of California
+    Copyright 2010-2017 The Regents of the University of California
+    Copyright 2011 The Regents of the
+    Copyright 2011 matt mooney  mfm@muteddisk.com
+    Copyright 2011-2019 Ulf Magnusson  ulfalizer@gmail.com
+    Copyright 2011-2020 NXP
+    Copyright 2012 Jacob Leverich Stanford University
+    Copyright 2012-2014 The Regents of the University of California
+    Copyright 2012-2015 The Regents of the University of California  Regents
+    Copyright 2012-2020 The Regents of the University of California  Regents
+    Copyright 2013 The Regents of the University of California  Regents
+    Copyright 2014-2016 Amazon.com Inc. or its affiliates. All Rights Reserved
+    Copyright 2015 Amazon.com Inc. or its affiliates
+    Copyright 2015 Andrew Waterman
+    Copyright 2015 The Regents of the University of California  Regents
+    Copyright 2015-2016 Amazon.com Inc. or its affiliates. All Rights Reserved
+    Copyright 2015-2022 The Regents of the University of California. Released under the Apache-2.0 license
+    Copyright 2016 Amazon.com Inc. or its affiliates. All Rights Reserved
+    Copyright 2016 Boston University  BU). All Rights Reserved
+    Copyright 2016 Free Electrons
+    Copyright 2016 Matthew Naylor University of Cambridge
+    Copyright 2016 NextThing Co
+    Copyright 2016 SiFive Inc
+    Copyright 2016 The Regents of the University of
+    Copyright 2016 The Regents of the University of California  Regents
+    Copyright 2016 Xilinx Inc
+    Copyright 2016-2017 NVIDIA Corporation. Licensed under the
+    Copyright 2016-2017 SiFive Inc
+    Copyright 2016-2020 The Regents of the University of California  Regents
+    Copyright 2017 Free Software Foundation Inc
+    Copyright 2017 Jorge Aparicio
+    Copyright 2017-2020 The Regents of the University of California
+    Copyright 2017-2020 The Regents of the University of California  Regents
+    Copyright 2017-2022 The Regents of the University of California
+    Copyright 2018 Free Software Foundation Inc
+    Copyright 2018 January 20
+    Copyright 2018 Xilinx Inc
+    Copyright 2018-2019 The Regents of the University of California
+    Copyright 2019 RHS Research LLC
+    Copyright 2019 SiFive Inc
+    Copyright 2019 The Regents of the University of California  Regents
+    Copyright 2019 Western Digital Corporation
+    Copyright 2019 Western Digital Corporation or its affiliates
+    Copyright 2019 Western Digital Corporation or its affiliates and other
+    Copyright 2019 Xilinx Inc
+    Copyright 2019-2021 Xilinx Inc
+    Copyright 2020 Xilinx Inc
+    Copyright 2020-2021 Jessica Clarke
+    Copyright 2021-2022 The Regents of the University of California  Regents
     Copyright 2024 Samsung Electronics Co.  Ltd.   Contributors All Rights Reserved
   License: Apache-2.0
 
   www.chisel-lang.org
-  Version: 3.2.2
+  Version: v3.2.2
   Source: https://github.com/freechipsproject/www.chisel-lang.org
   PURL: pkg:github/freechipsproject/www.chisel-lang.org
   Copyright:
@@ -361,19 +454,9 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
---- Apache-2.0 ---
+--- UNKNOWN ---
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Full license text available at: https://spdx.org/licenses/UNKNOWN.html
 
 
 --- BSD-3-Clause ---
@@ -402,6 +485,21 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+--- Apache-2.0 ---
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 
 --- CC-BY-4.0 ---
